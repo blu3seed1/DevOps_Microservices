@@ -5,11 +5,12 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+DOCPATH="bpyne/project-ml-microservice-kubernetes:app"
 
 # Step 2:  
 # Authenticate & tag
-echo "Docker ID and Image: $dockerpath"
+echo "Docker ID and Image: ${DOCPATH}"
 
 # Step 3:
 # Push image to a docker repository
+docker push ${DOCPATH}
